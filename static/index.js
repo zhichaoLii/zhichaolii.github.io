@@ -1,17 +1,3 @@
-// function toggleSound() {
-//             var music = document.querySelector('.song-audio-autoplay');//获取ID  
-//                 console.log(music);
-//                 console.log(music.paused);
-//             if (music.paused) { //判读是否播放  
-//                 music.paused=false;
-//                 music.play(); //没有就播放 
-//                 }         
-//         }
-
-// setInterval("toggleSound()",10);
-
-
-
 
 window.addEventListener("load", () => {
     new Container(config.wish, config.time);
