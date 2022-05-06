@@ -1,38 +1,42 @@
+// function toggleSound() {
+//             var music = document.querySelector('.song-audio-autoplay');//获取ID  
+//                 console.log(music);
+//                 console.log(music.paused);
+//             if (music.paused) { //判读是否播放  
+//                 music.paused=false;
+//                 music.play(); //没有就播放 
+//                 }         
+//         }
+
+// setInterval("toggleSound()",10);
+
+
+
+
 window.addEventListener("load", () => {
-    new Container(config.wish, config.time, config.texts);
+    new Container(config.wish, config.time);
 });
 
-function Container(wish, time, texts) {
+function Container(wish, time) {
     this.passedSeconds = 0;
     this.finalText = wish;
-    this.beginDate = time
-    this.texts = texts
+    this.beginDate = time;
 
-    this.renderTexts(this.texts);
     document.querySelector('.pass-time .finalText').innerHTML = this.finalText;
     setInterval(() => {
         this.passedSeconds = Math.ceil((+ new Date() - new Date(this.beginDate).getTime()) / 1000);
+
         let list = ['days', 'hours', 'minutes', 'seconds'];
 
         list.forEach(item => {
             document.querySelector(`.pass-time .${item}`).innerHTML = this[item]();
         })
-    }, 1000);
+    }, 500);
 }
 
 Container.prototype = {
-    renderTexts(texts) {
-        let div = document.createElement("div");
-        texts.forEach(item => {
-            let d = document.createElement("div");
-            d.innerHTML = item;
-            div.appendChild(d);
-        })
-        document.getElementById("marquee").innerHTML = div.innerHTML;
-    },
-    finalText() {
-        return this.text || "";
-    },
+    
+
     beginDate() {
         return this.time;
     },
