@@ -3,20 +3,10 @@ body{
 }
 .pass-time{
     color:white;
-    font-size:12px;
+    font-size:20px;
     line-height: 20px;
     margin:0 auto;
     text-align: center;
-}
-
-div#content {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    height: 800px;
-    clear: both;
-    overflow: hidden;
 }
 
 
