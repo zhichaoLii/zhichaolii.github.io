@@ -5,16 +5,23 @@
     <link rel="shortcut icon" href="static/nigeerhuox16.ico.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>love</title>
+    <title>LOVE</title>
     <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
 
-<img src="static/music.png" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
+<img src="static/music.png" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick=" let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
+
 <audio class="song-audio-autoplay" controls loop style="display: none;visibility: hidden">
-    <source src="static/wanan-yanrenzhong.mp3"></source>
-    Your browser isn't invited for super fun audio time.
+    <source src="./static/qinqinwodebaobei.mp3"></source>
 </audio>
+
+
+<!-- <audio  controls autoplay="autoplay" loop="loop" style="display:none;">
+  <source src="./static/qinqinwodebaobei.mp3"></source>
+</audio> -->
+
+
 <style type="text/css">
     .rotateImages{
         -webkit-animation:myRotate 10s linear infinite;
@@ -45,10 +52,6 @@
             <span class="kwy seconds"></span>
             秒</p>
     </div>
-
-    <marquee id="marquee" direction = "up" scrollamount="2" style="color:white; height:100px;line-height: 20px;font-size:12px;text-align: center;">
-
-    </marquee>
 
 
     <div id="pBg1cNNqT-an-obj-2"><img height="180" width="500" src="./static/boy-girl/2000.jpg">
