@@ -31,7 +31,7 @@ function Container(wish, time) {
         list.forEach(item => {
             document.querySelector(`.pass-time .${item}`).innerHTML = this[item]();
         })
-    }, 500);
+    }, 1000);
 }
 
 Container.prototype = {
